@@ -1,0 +1,112 @@
+###
+GET http://127.0.0.1:8000/api/turfs/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Green Arena",
+    "location": "Kothamangalam",
+    "contact": "9876543210",
+    "sport_type": "Football",
+    "price_per_hour": 1000,
+    "capacity": 10,
+    "available": true
+}
+
+###
+POST http://127.0.0.1:8000/api/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Sports Hub",
+    "location": "Muvattupuzha",
+    "contact": "9876543211",
+    "sport_type": "Cricket",
+    "price_per_hour": 1500,
+    "capacity": 15,
+    "available": true
+}
+
+###
+POST http://127.0.0.1:8000/api/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Power Play Arena",
+    "location": "Perumbavoor",
+    "contact": "9876543212",
+    "sport_type": "Football",
+    "price_per_hour": 1200,
+    "capacity": 12,
+    "available": true
+}
+
+
+###
+POST http://127.0.0.1:8000/api/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Victory Sports Ground",
+    "location": "Thodupuzha",
+    "contact": "9876543213",
+    "sport_type": "Badminton",
+    "price_per_hour": 800,
+    "capacity": 4,
+    "available": true
+}
+
+
+###
+POST http://127.0.0.1:8000/api/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Champions Turf",
+    "location": "Ernakulam",
+    "contact": "9876543214",
+    "sport_type": "Football",
+    "price_per_hour": 1800,
+    "capacity": 14,
+    "available": false
+}
+
+###
+PUT http://127.0.0.1:8000/api/turfs/1/
+Content-Type: application/json
+
+{
+    "turf_name": "Green Arena",
+    "location": "Kothamangalam",
+    "contact": "9876543210",
+    "sport_type": "Football",
+    "price_per_hour": 1200,
+    "capacity": 12,
+    "available": true
+}
+
+###
+DELETE http://127.0.0.1:8000/api/turfs/6/
+
+# api call for Booking
+
+###
+GET http://127.0.0.1:8000/api/booking/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/api/booking/
+Content-Type: application/json
+
+{
+    "customer_name": "divin",
+    "phone": "9876533210",
+    "turf_id": 4,
+    "booking_date": "2026-11-05",
+    "booking_time": "17:00:00",
+    "duration": 1
+}
